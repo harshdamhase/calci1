@@ -1,10 +1,99 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    
-    <title>Calculator</title>
+    <style>
+        .container {
+            background-color: rgb(75, 77, 73);
+            height: 400px;
+            width: 400px;
+            padding: 20px;
+            margin-top: 100px;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 10px;
+        }
+
+        .brand {
+            color: white;
+            margin-left: 10px;
+            margin-top: 10px;
+        }
+
+        .screen {
+            height: 50px;
+            width: 400px;
+            background-color: darkolivegreen;
+        }
+
+        .buttons-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            margin: 20px;
+            padding: 10px;
+            margin-left: 20px;
+            margin-right: 20px;
+            height: 20px;
+
+
+        }
+
+        .cal-button {
+            background-color: whitesmoke;
+            border-radius: 8px;
+            margin: 20px;
+            font-weight: bold;
+            cursor: pointer;
+            height: 50px;
+            width: 50px;
+            border: 2px solid wheat;
+        }
+
+        .cal-button:hover {
+            transition: 0.4s;
+            box-shadow: 0 2px 5px white;
+        }
+
+        .bg-red {
+            background-color: red;
+            color: white;
+        }
+    </style>
 </head>
+
 <body>
-    
+    <div class="container">
+        <p class="brand">RTC</p>
+
+        <input type="text" class="screen">
+        <div class="buttons-container">
+            <button class="cal-button">7</button>
+            <button class="cal-button">8</button>
+            <button class="cal-button">9</button>
+            <button class="cal-button bg-red">+</button>
+        </div>
+        <div class="buttons-container">
+            <button class="cal-button">4</button>
+            <button class="cal-button">5</button>
+            <button class="cal-button">6</button>
+            <button class="cal-button bg-red">-</button>
+        </div>
+
+        <div class="buttons-container">
+            <button class="cal-button">1</button>
+            <button class="cal-button">2</button>
+            <button class="cal-button ">3</button>
+            <button class="cal-button bg-red">*</button>
+        </div>
+
+
+        <div class="buttons-container">
+            <button class="cal-button">0</button>
+            <button class="cal-button bg-red">/</button>
+            <button class="cal-button bg-red">*</button>
+            <button class="cal-button bg-red">=</button>
+        </div>
+
 </body>
+
 </html>
